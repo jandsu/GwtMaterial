@@ -38,6 +38,7 @@ public class MaterialCard extends Composite {
 	private String description = "";
 	private String size = "medium";
 	private String type = "";
+	private String imageHeight = "";
 	
 	public MaterialCard() {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -140,7 +141,50 @@ public class MaterialCard extends Composite {
 		default:
 			break;
 		}
+		imgCard.setHeight("20vh");
 	}
-	
 
+	public Image getImgCard() {
+		return imgCard;
+	}
+
+	public void setImgCard(Image imgCard) {
+		this.imgCard = imgCard;
+	}
+
+	public String getImageHeight() {
+		return imageHeight;
+	}
+
+	public void setImageHeight(String imageHeight) {
+		this.imageHeight = imageHeight;
+		imgCard.setHeight(imageHeight + "vh");
+	}
+
+	public HTMLPanel getCardContentPanel() {
+		return cardContentPanel;
+	}
+
+	public void setCardContentPanel(HTMLPanel cardContentPanel) {
+		this.cardContentPanel = cardContentPanel;
+	}
+
+	public HTMLPanel getCardRevealContent() {
+		return cardRevealContent;
+	}
+
+	public void setCardRevealContent(HTMLPanel cardRevealContent) {
+		this.cardRevealContent = cardRevealContent;
+	}
+
+	public HTMLPanel getActionPanel() {
+		return actionPanel;
+	}
+
+	public void setActionPanel(HTMLPanel actionPanel) {
+		this.actionPanel = actionPanel;
+	}
+
+	
+	
 }
