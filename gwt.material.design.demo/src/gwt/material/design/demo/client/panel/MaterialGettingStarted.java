@@ -1,5 +1,7 @@
 package gwt.material.design.demo.client.panel;
 
+import gwt.material.design.demo.client.resources.IMaterialConstants;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -23,12 +25,12 @@ public class MaterialGettingStarted extends Composite{
 
 	@UiHandler("btnDownloadAsset")
 	void onDownloadAsset(ClickEvent e){
-		Window.open("http://materializecss.com/bin/materialize-v0.95.3.zip", "_blank", "");
+		Window.open(IMaterialConstants.DOWNLOAD_MATERIALIZE, "_blank", "");
 	}
 
 	@UiHandler("btnDownloadJar")
 	void onDownloadJar(ClickEvent e){
-		Window.open("http://gwt-material.appspot.com/bin/gwt.material.design.15.3.jar", "_blank", "");
+		Window.open(IMaterialConstants.DOWNLOAD_GWT_MATERIAL, "_blank", "");
 	}
 	
 }	

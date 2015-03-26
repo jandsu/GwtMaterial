@@ -12,6 +12,7 @@ public class MaterialButtonPanel extends Composite {
 	interface MaterialButtonPanelUiBinder extends UiBinder<Widget, MaterialButtonPanel> {
 	}
 	
+	
 	public MaterialButtonPanel() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}

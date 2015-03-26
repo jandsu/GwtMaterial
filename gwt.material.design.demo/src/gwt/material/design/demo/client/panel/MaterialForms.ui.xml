@@ -17,7 +17,7 @@
 		
 		<m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
 		<m:MaterialTextArea placeholder="Content" />
-		<m:MaterialTextArea placeholder="About" icon="mdi-action-face-unlock"/>
+		<m:MaterialTextArea ui:field="txtArea" placeholder="About" icon="mdi-action-face-unlock"/>
 		
 		<pre>
 <span class="tag">&lt;m:MaterialTextArea</span> <span class="attr">placeholder</span>="Content" <span class="tag">/></span>

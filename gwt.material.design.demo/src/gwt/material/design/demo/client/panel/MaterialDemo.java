@@ -2,12 +2,14 @@ package gwt.material.design.demo.client.panel;
 
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialTopNav;
+import gwt.material.design.demo.client.resources.IMaterialConstants;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -20,8 +22,6 @@ public class MaterialDemo extends Composite {
 	}
 	
 	@UiField HTMLPanel contentPanel;
-	
-	
 	@UiField MaterialHome materialHome;
 	@UiField MaterialButtonPanel materialButtons;
 	@UiField MaterialForms materialForms;
@@ -37,21 +37,28 @@ public class MaterialDemo extends Composite {
 	@UiField MaterialFooterPanel materialFooters; 
 	@UiField MaterialTabsPanel materialTabs;
 	@UiField MaterialCollectionPanel materialCollections;
-	
 	@UiField MaterialNavBar navBar;
 	@UiField MaterialTopNav topNav;
 	
 	public MaterialDemo() {
 		initWidget(uiBinder.createAndBindUi(this));
-		changeNav(materialHome,"GWT Material", "Under Development");
+		changeNav(materialHome,"GWT Material", "A  Material Design look and feel for GWT Apps plus Phonegap.");
 	}
 
 	@Override
 	protected void onAttach() {
-		// TODO Auto-generated method stub
 		super.onAttach();
 	}
 	
+	@UiHandler("btnChat")
+	void onChat(ClickEvent e){
+		Window.open(IMaterialConstants.LINK_GITTER_CHAT, "", "");
+	}
+	
+	@UiHandler("btnDownloadPhonegap")
+	void onDownloadPhonegap(ClickEvent e){
+		Window.open(IMaterialConstants.DOWNLOAD_PHONEGAP_APK, "_blank", "");
+	}
 	
 	@UiHandler("btnGettingStarted")
 	void onGettingStarted(ClickEvent e){
@@ -60,7 +67,7 @@ public class MaterialDemo extends Composite {
 	
 	@UiHandler("btnAbout")
 	void onAbout(ClickEvent e){
-		changeNav(materialHome,"GWT Material", "Under Development");
+		changeNav(materialHome,"GWT Material", "A  Material Design look and feel for GWT Apps plus Phonegap.");
 	}
 
 	
@@ -125,8 +132,8 @@ public class MaterialDemo extends Composite {
 	}
 	
 	private void changeNav(Composite content, String title, String description){
-		//MaterialAnimator.animate(Transition.PULL, contentPanel, 500);
 		navBar.hide();
+		Window.scrollTo(0, 0);
 		contentPanel.clear();
 		contentPanel.add(content);
 		topNav.setTitle(title);

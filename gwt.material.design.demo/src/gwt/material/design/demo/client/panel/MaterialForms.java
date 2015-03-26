@@ -1,6 +1,7 @@
 package gwt.material.design.demo.client.panel;
 
 import gwt.material.design.client.ui.MaterialSwitch;
+import gwt.material.design.client.ui.MaterialTextArea;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ChangeEvent;
@@ -17,10 +18,13 @@ public class MaterialForms extends Composite {
 	interface MaterialFormsUiBinder extends UiBinder<Widget, MaterialForms> {
 	}
 	
+	@UiField MaterialTextArea txtArea;
 	@UiField MaterialSwitch mySwitch;
 
 	public MaterialForms() {
+		
 		initWidget(uiBinder.createAndBindUi(this));
+		txtArea.setText("My Group");
 		mySwitch.setValue(true);
 	}
 
