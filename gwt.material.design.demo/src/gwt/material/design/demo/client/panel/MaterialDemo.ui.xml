@@ -53,6 +53,8 @@
 					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialFooter" text="Footer" textColor="blue"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialTabs" text="Tabs" textColor="blue"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnCollections" text="Collections" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnBadges" text="Badges" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnGrid" text="Grid" textColor="blue"/></m:sidebaritem>
 				</m:MaterialNavBar>
 				<m:MaterialTopNav ui:field="topNav"  color="blue" textColor="white">
 					<m:child>
@@ -79,6 +81,8 @@
 					<p:MaterialFooterPanel ui:field="materialFooters"/>
 					<p:MaterialTabsPanel ui:field="materialTabs"/>
 					<p:MaterialCollectionPanel ui:field="materialCollections"/>
+					<p:MaterialBadges ui:field="materialBadges" />
+					<p:MaterialGrid ui:field="materialGrid" />
 					<!-- <p:Team /> -->
 				</g:HTMLPanel>
 			</main>	

@@ -31,4 +31,9 @@ public class MaterialDialogs extends Composite {
 	void onModal(ClickEvent e){
 		MaterialModal.showModal(true, new ModalContent());
 	}
+	
+	@UiHandler("btnModalFixFooter")
+	void onModalFix(ClickEvent e){
+		MaterialModal.showModal(true, new ModalContent(), true);
+	}
 }

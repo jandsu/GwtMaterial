@@ -24,5 +24,10 @@ public class ModalContent extends Composite {
 	void onAgree(ClickEvent e){
 		MaterialModal.closeModal();
 	}
+	
+	@UiHandler("btnDisagree")
+	void onDisagree(ClickEvent e){
+		MaterialModal.closeModal();
+	}
 
 }

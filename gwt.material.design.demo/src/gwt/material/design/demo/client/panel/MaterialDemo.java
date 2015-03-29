@@ -37,6 +37,9 @@ public class MaterialDemo extends Composite {
 	@UiField MaterialFooterPanel materialFooters; 
 	@UiField MaterialTabsPanel materialTabs;
 	@UiField MaterialCollectionPanel materialCollections;
+	@UiField MaterialBadges materialBadges;
+	@UiField MaterialGrid materialGrid;
+	
 	@UiField MaterialNavBar navBar;
 	@UiField MaterialTopNav topNav;
 	
@@ -129,6 +132,16 @@ public class MaterialDemo extends Composite {
 	@UiHandler("btnCollections")
 	void onCollections(ClickEvent e){
 		changeNav(materialCollections, "Collections", "Collections allow you to group list objects together.");
+	}
+	
+	@UiHandler("btnBadges")
+	void onBadges(ClickEvent e){
+		changeNav(materialBadges, "Badges", "Badges can notify you that there are new or unread messages or notifications. Add the new class to the badge to give it the background.");
+	}
+	
+	@UiHandler("btnGrid")
+	void onGrid(ClickEvent e){
+		changeNav(materialGrid, "Grid", "We are using a standard 12 column fluid responsive grid system.The grid helps you layout your page in an ordered, easy fashion");
 	}
 	
 	private void changeNav(Composite content, String title, String description){

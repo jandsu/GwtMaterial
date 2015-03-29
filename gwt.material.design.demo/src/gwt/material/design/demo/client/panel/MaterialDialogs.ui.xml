@@ -17,6 +17,7 @@ MaterialToast.alert(<span class="tag">"I Love Material Design"</span>);
 		
 		<m:MaterialTitle title="Modal" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. "/>
 		<m:MaterialButton text="Show Modal" ui:field="btnModal" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" color="blue" />
 		<pre>
 MaterialModal.showModal(<span class="tag">true</span>, <span class="tag">new</span> ModalContent());
 		</pre>

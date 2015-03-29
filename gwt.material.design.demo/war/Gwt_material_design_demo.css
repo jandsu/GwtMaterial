@@ -1,4 +1,10 @@
 /** Add css rules here for your application. */
+.side-nav{
+  height: 100% !important;
+  box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+}
 pre{
 	padding-top: 20px;
 	white-space: pre;
