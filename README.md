@@ -4,7 +4,19 @@
 <br/>
 A GWT Wrapper for Materializecss
 
-<h3>Current Version 15.4</h3>
+<h3>Upcoming Version 15.4.15</h3>
+<ul>
+<li>GWT Material Showcase</li>
+	<ul>
+		<li>Parallax</li>
+		<li>Material Weather</li>
+		<li>Login UI</li>
+	</ul>
+</li>
+<li>Material Collapsible Popout</li>
+<li>Material Bottom Sheets</li>
+</ul>
+<h3>Version 15.4</h3>
 <ul>
 <li>Integrate GWT Material to Phonegap</li>
 <li>Remove GWT Uploader on Build Path (Which cause a inheritance problem)</li>
