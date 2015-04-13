@@ -15,6 +15,7 @@ A GWT Wrapper for Materializecss
 </li>
 <li>Material Collapsible Popout</li>
 <li>Material Bottom Sheets</li>
+<li>Side Bar nav fixed with overflow auto on small devices</li>
 </ul>
 <h3>Version 15.4</h3>
 <ul>
