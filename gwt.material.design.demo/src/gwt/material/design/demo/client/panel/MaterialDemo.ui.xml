@@ -41,6 +41,7 @@
 				<m:MaterialNavBar wave="blue" ui:field="navBar" name="myNavBar"  sideBar="fixed" color="blue darken-1"  align="right" >
 					<m:sidebaritem><m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnAbout" text="About" textColor="blue"  /></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnShowcase" text="Showcase" textColor="blue"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnButtons" text="Buttons" textColor="blue"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnForms" text="Forms" textColor="blue"/></m:sidebaritem>
 					<m:sidebaritem><m:MaterialLink ui:field="btnDialogs" text="Dialogs" textColor="blue"/></m:sidebaritem>
@@ -83,6 +84,7 @@
 					<p:MaterialCollectionPanel ui:field="materialCollections"/>
 					<p:MaterialBadges ui:field="materialBadges" />
 					<p:MaterialGrid ui:field="materialGrid" />
+					<p:MaterialShowcase ui:field="materialShowcase"/>
 					<!-- <p:Team /> -->
 				</g:HTMLPanel>
 			</main>	

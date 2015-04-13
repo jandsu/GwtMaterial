@@ -28,7 +28,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-		<m:MaterialListBox >
+		<m:MaterialListBox ui:field="lstOptions">
 			<item>Option 1</item>
 			<item>Option 2</item>
 			<item>Option 3</item>
@@ -129,6 +129,7 @@
 		<pre>
 <span class="tag">&lt;m:MaterialDatePicker placeholder="Date"</span> <span class="tag">/></span>
 		</pre>
+		
 		
 	</g:HTMLPanel>
 </ui:UiBinder> 

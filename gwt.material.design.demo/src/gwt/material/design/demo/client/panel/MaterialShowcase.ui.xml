@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialTitle title="Parallax" description="Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling. Check out the demo to get a better idea of it.'"/>
+		<m:MaterialButton ui:field="btnParallax" color="blue" waves="light"  text="Open Demo"/>
+		
+		<m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup.'"/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12 m4 l4">
+				<m:MaterialWeather location="Makati, Philippines" color="blue"/>
+			</m:MaterialColumn>
+		</m:MaterialRow>
+		
+		<pre>
+&lt;m:MaterialWeather location="Makati, Philippines" color="blue"/>
+		</pre>
+		
+		<m:MaterialTitle title="Login UI" description="Here is an example of GWT Material Design UI with card base interface'"/>
+		<m:MaterialButton ui:field="btnLogin" color="blue" waves="light"  text="Open Demo"/>
+		
+		<pre>
+&lt;m:MaterialColumn grid="s12 m12 l4" offset="l4" >
+		&lt;m:MaterialTitle title="Login" description="Please provide your account credentials."/>
+		&lt;m:MaterialPanel padding="5" shadow="1">
+			&lt;m:MaterialTextBox placeholder="Email"/>
+			&lt;m:MaterialTextBox placeholder="Password" />
+			&lt;m:MaterialCheckBox text="Keep me logged in"/>
+			&lt;m:MaterialButton color="blue" waves="light" text="Log In" width="100%"/>
+		&lt;/m:MaterialPanel >
+&lt;/m:MaterialColumn>
+		</pre>
+	</g:HTMLPanel>
+</ui:UiBinder> 

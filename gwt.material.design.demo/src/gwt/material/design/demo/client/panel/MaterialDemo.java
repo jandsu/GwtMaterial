@@ -39,6 +39,7 @@ public class MaterialDemo extends Composite {
 	@UiField MaterialCollectionPanel materialCollections;
 	@UiField MaterialBadges materialBadges;
 	@UiField MaterialGrid materialGrid;
+	@UiField MaterialShowcase materialShowcase;
 	
 	@UiField MaterialNavBar navBar;
 	@UiField MaterialTopNav topNav;
@@ -142,6 +143,11 @@ public class MaterialDemo extends Composite {
 	@UiHandler("btnGrid")
 	void onGrid(ClickEvent e){
 		changeNav(materialGrid, "Grid", "We are using a standard 12 column fluid responsive grid system.The grid helps you layout your page in an ordered, easy fashion");
+	}
+	
+	@UiHandler("btnShowcase")
+	void onShowcase(ClickEvent e){
+		changeNav(materialShowcase, "Showcase", "Great Example showcases about the implementation of Material Design in GWT");
 	}
 	
 	private void changeNav(Composite content, String title, String description){

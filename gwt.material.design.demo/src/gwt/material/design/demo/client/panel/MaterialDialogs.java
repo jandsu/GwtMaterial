@@ -1,6 +1,7 @@
 package gwt.material.design.demo.client.panel;
 
 import gwt.material.design.client.ui.MaterialModal;
+import gwt.material.design.client.ui.MaterialModal.TYPE;
 import gwt.material.design.client.ui.MaterialToast;
 
 import com.google.gwt.core.client.GWT;
@@ -29,11 +30,16 @@ public class MaterialDialogs extends Composite {
 	
 	@UiHandler("btnModal")
 	void onModal(ClickEvent e){
-		MaterialModal.showModal(true, new ModalContent());
+		MaterialModal.showModal(true, new ModalContent(), TYPE.DEFAULT);
+	}
+	
+	@UiHandler("btnMoadalBottomSheets")
+	void onModalBottom(ClickEvent e){
+		MaterialModal.showModal(true, new ModalContent(), TYPE.BOTTOM_SHEET);
 	}
 	
 	@UiHandler("btnModalFixFooter")
 	void onModalFix(ClickEvent e){
-		MaterialModal.showModal(true, new ModalContent(), true);
+		MaterialModal.showModal(true, new ModalContent(), TYPE.FIXED_FOOTER);
 	}
 }

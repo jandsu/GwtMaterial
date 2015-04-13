@@ -1,5 +1,7 @@
 package gwt.material.design.demo.client.panel;
 
+import gwt.material.design.client.ui.MaterialToast;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -20,9 +22,9 @@ public class MaterialForms extends Composite {
 	}
 
 
-	@UiHandler("mySwitch")
-	void onClick(ChangeEvent e){
-		
+	@UiHandler("lstOptions")
+	void onChangeListBox(ChangeEvent e){
+		MaterialToast.alert("SAmple");
 	}
 	
 }
