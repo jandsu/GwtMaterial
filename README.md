@@ -2,8 +2,8 @@
 
 <img src="http://gwt-material.appspot.com/bin/ic_gwt_logo.png" />
 <br/>
-A GWT Wrapper for Materializecss
-
+A Google Material Design wrapper for GWT <br>
+<a href="www.gwt-material.appspot.com">http://www.gwt-material.appspot.com</a>
 <h3>Version 15.4.15</h3>
 <ul>
 <li>GWT Material Showcase</li>
