@@ -4,7 +4,7 @@
 <br/>
 A GWT Wrapper for Materializecss
 
-<h3>Upcoming Version 15.4.15</h3>
+<h3>Version 15.4.15</h3>
 <ul>
 <li>GWT Material Showcase</li>
 	<ul>
@@ -16,6 +16,7 @@ A GWT Wrapper for Materializecss
 <li>Material Collapsible Popout</li>
 <li>Material Bottom Sheets</li>
 <li>Side Bar nav fixed with overflow auto on small devices</li>
+<li>Apache License 2.0  Information Added</li>
 </ul>
 <h3>Version 15.4</h3>
 <ul>
