@@ -17,6 +17,7 @@ A GWT Wrapper for Materializecss
 <li>Material Bottom Sheets</li>
 <li>Side Bar nav fixed with overflow auto on small devices</li>
 <li>Apache License 2.0  Information Added</li>
+<li>Donate Button added to support the development of GWT Material</li>
 </ul>
 <h3>Version 15.4</h3>
 <ul>
